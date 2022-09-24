@@ -1,0 +1,77 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+_global_script_classes=[{
+"base": "CharacterBody2D",
+"class": &"GameCrate",
+"language": &"GDScript",
+"path": "res://nodes/crate.gd"
+}, {
+"base": "Area2D",
+"class": &"GameDoor",
+"language": &"GDScript",
+"path": "res://nodes/door.gd"
+}, {
+"base": "Area2D",
+"class": &"GameDot",
+"language": &"GDScript",
+"path": "res://nodes/dot.gd"
+}, {
+"base": "Resource",
+"class": &"GameLevel",
+"language": &"GDScript",
+"path": "res://resources/levels/level.gd"
+}, {
+"base": "CharacterBody2D",
+"class": &"GamePlayer",
+"language": &"GDScript",
+"path": "res://nodes/player.gd"
+}, {
+"base": "MarginContainer",
+"class": &"GameScreen",
+"language": &"GDScript",
+"path": "res://nodes/screens/screen.gd"
+}, {
+"base": "Node",
+"class": &"Types",
+"language": &"GDScript",
+"path": "res://nodes/globals/constants.gd"
+}]
+_global_script_class_icons={
+"GameCrate": "",
+"GameDoor": "",
+"GameDot": "",
+"GameLevel": "",
+"GamePlayer": "",
+"GameScreen": "",
+"Types": ""
+}
+
+[application]
+
+config/name="Sokoban"
+run/main_scene="res://nodes/screens/level_selection_screen.tscn"
+config/features=PackedStringArray("4.0", "Vulkan Mobile")
+config/icon="res://images/icon.svg"
+
+[autoload]
+
+Constants="*res://nodes/globals/constants.tscn"
+Screens="*res://nodes/globals/screens.tscn"
+Variables="*res://nodes/globals/variables.tscn"
+
+[layer_names]
+
+2d_physics/layer_1="crates"
+2d_physics/layer_2="dots"
+
+[rendering]
+
+vulkan/rendering/back_end=1

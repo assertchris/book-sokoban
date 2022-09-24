@@ -1,0 +1,18 @@
+[gd_scene load_steps=8 format=3 uid="uid://nor7dwjo4e4m"]
+
+[ext_resource type="Script" path="res://nodes/globals/constants.gd" id="1_vl630"]
+[ext_resource type="PackedScene" uid="uid://y5jpkbtmtofc" path="res://nodes/screens/level_selection_screen.tscn" id="2_vpbl4"]
+[ext_resource type="PackedScene" uid="uid://cojc8tfuakkqk" path="res://nodes/screens/play_screen.tscn" id="3_c52qr"]
+[ext_resource type="PackedScene" uid="uid://c11tdynl6vqc1" path="res://nodes/crate.tscn" id="4_odou1"]
+[ext_resource type="PackedScene" uid="uid://c0b704i7ohqqf" path="res://nodes/door.tscn" id="5_45ce3"]
+[ext_resource type="PackedScene" uid="uid://btd40akjil3uu" path="res://nodes/dot.tscn" id="6_xp4h8"]
+[ext_resource type="PackedScene" uid="uid://dawch8kf31xc5" path="res://nodes/player.tscn" id="7_al4gh"]
+
+[node name="Constants" type="Node"]
+script = ExtResource("1_vl630")
+level_selection_scene = ExtResource("2_vpbl4")
+play_scene = ExtResource("3_c52qr")
+crate_scene = ExtResource("4_odou1")
+door_scene = ExtResource("5_45ce3")
+dot_scene = ExtResource("6_xp4h8")
+player_scene = ExtResource("7_al4gh")

@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://c11tdynl6vqc1"]
+
+[ext_resource type="Script" path="res://nodes/crate.gd" id="1_ub2al"]
+[ext_resource type="Texture2D" uid="uid://dpuip6c0ee3t7" path="res://images/sokoban_tilesheet.png" id="2_xmbb5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h3t6m"]
+size = Vector2(60, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e6jmb"]
+atlas = ExtResource("2_xmbb5")
+region = Rect2(384, 0, 64, 64)
+
+[node name="Crate" type="CharacterBody2D"]
+z_index = 1
+collision_mask = 2
+script = ExtResource("1_ub2al")
+
+[node name="Collider" type="CollisionShape2D" parent="."]
+position = Vector2(30, 30)
+shape = SubResource("RectangleShape2D_h3t6m")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+position = Vector2(32, 32)
+texture = SubResource("AtlasTexture_e6jmb")

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://c3vpqxrc4d78f"]
+
+[ext_resource type="Script" path="res://resources/levels/level.gd" id="1_qp530"]
+
+[resource]
+script = ExtResource("1_qp530")
+name = "Level 1"
+width = 7
+layout = [0, 1, 1, 1, 1, 1, 2, 7, 8, 8, 8, 8, 8, 3, 7, 8, 9, 8, 8, 8, 3, 7, 8, 8, 8, 8, 8, 12, 7, 8, 10, 8, 11, 8, 3, 7, 8, 8, 8, 8, 8, 3, 6, 5, 5, 5, 5, 5, 4]
